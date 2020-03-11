@@ -21,9 +21,9 @@ class App extends Component {
         }
     }
         
-        
-        render() {
-            const images = [walter, brian, keanu, wonka, fry, picard]
+    
+    render() {
+        const images = [walter, brian, keanu, wonka, fry, picard, thinker]
             return (
                 <div className="App">
                     <header className="main-header">
@@ -31,7 +31,7 @@ class App extends Component {
                     </header>
                     <main>
                         {<ul>
-                            <ThumbnailPicker images />
+                            <ThumbnailPicker images = {images} />
                         </ul>}    
                         <div className="preview-and-inputs">
                             <section className="preview"></section>
